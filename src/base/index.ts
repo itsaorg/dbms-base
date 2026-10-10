@@ -4,3 +4,4 @@ export { DbmsContainer } from "./DbmsContainer.js";
 export { DbmsEntity } from "./DbmsEntity.js";
 export { DbmsSchema } from "./DbmsSchema.js";
 export { DbmsQuery } from "./DbmsQuery.js";
+export { DbmsTransaction } from "./DbmsTransaction.js";
