@@ -6,3 +6,4 @@ export type { DbmsSchemaInterface } from "./DbmsSchemaInterface.js";
 export type { DbmsQueryInterface } from "./DbmsQueryInterface.js";
 export type { DbmsTransactionInterface } from "./DbmsTransactionInterface.js";
 export type { DbmsIndexInterface } from "./DbmsIndexInterface.js";
+export type { DbmsBufferizerInterface } from "./DbmsBufferizerInterface.js";
