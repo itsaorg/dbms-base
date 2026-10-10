@@ -41,5 +41,6 @@
   "lint-staged": {
     "*.{ts,js,mjs,cjs,json,md,yml,yaml}": "prettier --config configs/.prettierrc.json --ignore-path configs/prettierignore --write",
     "*.ts": "eslint --config configs/eslint.config.js --fix"
-  }
+  },
+  "files": "[\"dist\"]"
 }
