@@ -12,7 +12,8 @@
     "format:check": "prettier --config configs/.prettierrc.json --ignore-path configs/prettierignore --check .",
     "lint": "eslint . --config configs/eslint.config.js",
     "lint:fix": "eslint . --config configs/eslint.config.js --fix",
-    "test": "vitest --config configs/vitest.config.ts"
+    "test": "vitest --config configs/vitest.config.ts",
+    "docs": "typedoc --options configs/typedoc.json"
   },
   "publishConfig": {
     "access": "public"
@@ -29,6 +30,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "prettier": "^3.9.10",
+    "typedoc": "^0.28.20",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.71.1",
     "vitest": "^3.2.7"
