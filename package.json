@@ -9,16 +9,23 @@
     "typecheck": "tsc --project tsconfig.json --noEmit --pretty",
     "build": "tsc --project tsconfig.json --pretty",
     "format": "prettier --config configs/.prettierrc.json --ignore-path configs/prettierignore --write .",
-    "format:check": "prettier --config configs/.prettierrc.json --ignore-path configs/prettierignore --check ."
+    "format:check": "prettier --config configs/.prettierrc.json --ignore-path configs/prettierignore --check .",
+    "lint": "eslint . --config configs/eslint.config.js",
+    "lint:fix": "eslint . --config configs/eslint.config.js --fix"
   },
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/node": "^26.6.5",
+    "eslint": "^10.12.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
     "husky": "^9.1.7",
     "prettier": "^3.9.10",
-    "typescript": "^7.0.2"
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.1"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts"
