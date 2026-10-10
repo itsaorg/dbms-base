@@ -7,7 +7,9 @@
   "scripts": {
     "prepare": "husky",
     "typecheck": "tsc --project tsconfig.json --noEmit --pretty",
-    "build": "tsc --project tsconfig.json --pretty"
+    "build": "tsc --project tsconfig.json --pretty",
+    "format": "prettier --config configs/.prettierrc.json --ignore-path configs/prettierignore --write .",
+    "format:check": "prettier --config configs/.prettierrc.json --ignore-path configs/prettierignore --check ."
   },
   "publishConfig": {
     "access": "public"
@@ -15,6 +17,7 @@
   "devDependencies": {
     "@types/node": "^26.6.5",
     "husky": "^9.1.7",
+    "prettier": "^3.9.10",
     "typescript": "^7.0.2"
   },
   "main": "dist/index.js",
