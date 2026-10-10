@@ -13,7 +13,8 @@
     "lint": "eslint . --config configs/eslint.config.js",
     "lint:fix": "eslint . --config configs/eslint.config.js --fix",
     "test": "vitest --config configs/vitest.config.ts",
-    "docs": "typedoc --options configs/typedoc.json"
+    "docs": "typedoc --options configs/typedoc.json",
+    "check:layout": "node .devenv/check-one-principal.mjs"
   },
   "publishConfig": {
     "access": "public"
