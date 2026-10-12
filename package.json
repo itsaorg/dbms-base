@@ -27,7 +27,9 @@
     "lint:fix": "eslint . --config configs/eslint.config.js --fix",
     "check:layout": "node .devenv/check-one-principal.mjs",
     "test": "vitest --config configs/vitest.config.ts",
-    "build": "tsc --project tsconfig.json --pretty",
+    "clean:dist": "node .devenv/clean-dist.mjs",
+    "build": "npm run clean:dist && npm run build:tsc",
+    "build:tsc": "tsc --project tsconfig.json --pretty",
     "docs": "typedoc --options configs/typedoc.json",
     "release:npm": "npm run build && node .devenv/publish-if-missing.mjs"
   },
