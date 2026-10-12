@@ -27,6 +27,7 @@ export {
   DbmsBufferizer,
   DbmsContainer,
   DbmsEntity,
+  DbmsError,
   DbmsEventEmitter,
   DbmsIndex,
   DbmsQuery,
@@ -34,4 +35,3 @@ export {
   DbmsStore,
   DbmsTransaction,
 } from "./base/index.js";
-export { DbmsError } from "./errors/index.js";

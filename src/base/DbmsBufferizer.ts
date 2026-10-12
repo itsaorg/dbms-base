@@ -1,4 +1,4 @@
-import { DbmsError } from "../errors/DbmsError.js";
+import { DbmsError } from "./DbmsError.js";
 import { DbmsErrorCode } from "../enums/DbmsErrorCode.js";
 import type { DbmsBufferizerInterface } from "../types/DbmsBufferizerInterface.js";
 
