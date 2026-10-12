@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { DbmsBufferizer } from "../../src/base/DbmsBufferizer.js";
 import { DbmsError } from "../../src/errors/DbmsError.js";
-import { DbmsErrorCode } from "../../src/errors/DbmsErrorCode.js";
+import { DbmsErrorCode } from "../../src/enums/DbmsErrorCode.js";
 
 class TestBufferizer extends DbmsBufferizer {}
 

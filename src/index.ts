@@ -1,10 +1,22 @@
-export { StoreType } from "./enums/index.js";
-export type { DbmsEventMap } from "./events/index.js";
+/**
+ * Contracts for Itsa DBMS stores, queries, transactions, and buffer frames.
+ *
+ * 💡 Import names from this package root.
+ *
+ * @example
+ * ```ts
+ * import { StoreType, DbmsErrorCode } from "@itsaorg/dbms-base";
+ * ```
+ *
+ * @packageDocumentation
+ */
+export { StoreType, DbmsErrorCode } from "./enums/index.js";
 export type {
   DbmsBufferizerInterface,
   DbmsContainerInterface,
   DbmsEntityInterface,
   DbmsEventEmitterInterface,
+  DbmsEventMap,
   DbmsIndexInterface,
   DbmsQueryInterface,
   DbmsSchemaInterface,
@@ -22,4 +34,4 @@ export {
   DbmsStore,
   DbmsTransaction,
 } from "./base/index.js";
-export { DbmsError, DbmsErrorCode } from "./errors/index.js";
+export { DbmsError } from "./errors/index.js";

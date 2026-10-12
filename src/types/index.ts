@@ -1,3 +1,9 @@
+/**
+ * Contracts that describe stores, events, queries, and buffer frames.
+ *
+ * @module
+ */
+export type { DbmsEventMap } from "./DbmsEventMap.js";
 export type { DbmsEventEmitterInterface } from "./DbmsEventEmitterInterface.js";
 export type { DbmsStoreInterface } from "./DbmsStoreInterface.js";
 export type { DbmsContainerInterface } from "./DbmsContainerInterface.js";
