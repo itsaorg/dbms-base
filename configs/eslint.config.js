@@ -23,8 +23,12 @@ export default tseslint.config(
     files: ["**/*.js", "**/*.mjs"],
     extends: [tseslint.configs.disableTypeChecked],
     languageOptions: {
-      globals: { URL: "readonly" },
+      globals: {
+        URL: "readonly",
+        console: "readonly",
+        process: "readonly",
+      },
     },
   },
-  { ignores: ["dist/**", "coverage/**", "node_modules/**"] },
+  { ignores: ["dist/**", "coverage/**", "docs/**", "node_modules/**"] },
 );
