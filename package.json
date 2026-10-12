@@ -4,6 +4,12 @@
   "description": "Zero-dependency TypeScript contracts for Itsa DBMS stores, queries, transactions, and buffer boundaries.",
   "type": "module",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsaorg/dbms-base.git"
+  },
+  "bugs": "https://github.com/itsaorg/dbms-base/issues",
+  "homepage": "https://itsaorg.github.io/dbms-base/",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -13,14 +19,14 @@
   "scripts": {
     "prepare": "husky",
     "typecheck": "tsc --project tsconfig.json --noEmit --pretty",
-    "build": "tsc --project tsconfig.json --pretty",
     "format": "prettier --config configs/.prettierrc.json --ignore-path configs/prettierignore --write .",
     "format:check": "prettier --config configs/.prettierrc.json --ignore-path configs/prettierignore --check .",
     "lint": "eslint . --config configs/eslint.config.js",
     "lint:fix": "eslint . --config configs/eslint.config.js --fix",
+    "check:layout": "node .devenv/check-one-principal.mjs",
     "test": "vitest --config configs/vitest.config.ts",
-    "docs": "typedoc --options configs/typedoc.json",
-    "check:layout": "node .devenv/check-one-principal.mjs"
+    "build": "tsc --project tsconfig.json --pretty",
+    "docs": "typedoc --options configs/typedoc.json"
   },
   "publishConfig": {
     "access": "public"
