@@ -1,4 +1,4 @@
-import type { StoreType } from "../enums/StoreType.js";
+import type { StoreType } from "./StoreType.js";
 import { DbmsEventEmitter } from "./DbmsEventEmitter.js";
 import type { DbmsStoreInterface } from "../types/DbmsStoreInterface.js";
 

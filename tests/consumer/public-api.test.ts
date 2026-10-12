@@ -20,7 +20,7 @@ describe("public API", () => {
     expect(() =>
       execFileSync(
         process.execPath,
-        ["--input-type=module", "-e", "await import('@itsaorg/dbms-base/src/enums/StoreType.js')"],
+        ["--input-type=module", "-e", "await import('@itsaorg/dbms-base/src/base/StoreType.js')"],
         { stdio: "pipe" },
       ),
     ).toThrow();

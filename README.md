@@ -59,9 +59,8 @@ Each class, interface, and enum has a longer example in the [API reference](http
 
 ## Project layout
 
-- `src/enums` holds the enumerations, including `StoreType` and `DbmsErrorCode`.
+- `src/base` holds the classes and the enumerations, including `DbmsStore`, `DbmsError`, `StoreType`, and `DbmsErrorCode`.
 - `src/types` holds the interfaces, including `DbmsEventMap`.
-- `src/base` holds the classes, including `DbmsStore` and `DbmsError`.
 
 `src/index.ts` re-exports those names. That file is the public API.
 

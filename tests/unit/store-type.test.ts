@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { StoreType } from "../../src/enums/StoreType.js";
+import { StoreType } from "../../src/base/StoreType.js";
 
 const approved = [
   "docstore",

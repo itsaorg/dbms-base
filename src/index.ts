@@ -10,7 +10,6 @@
  *
  * @packageDocumentation
  */
-export { StoreType, DbmsErrorCode } from "./enums/index.js";
 export type {
   DbmsBufferizerInterface,
   DbmsContainerInterface,
@@ -24,6 +23,8 @@ export type {
   DbmsTransactionInterface,
 } from "./types/index.js";
 export {
+  StoreType,
+  DbmsErrorCode,
   DbmsBufferizer,
   DbmsContainer,
   DbmsEntity,

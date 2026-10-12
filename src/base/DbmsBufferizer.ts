@@ -1,5 +1,5 @@
 import { DbmsError } from "./DbmsError.js";
-import { DbmsErrorCode } from "../enums/DbmsErrorCode.js";
+import { DbmsErrorCode } from "./DbmsErrorCode.js";
 import type { DbmsBufferizerInterface } from "../types/DbmsBufferizerInterface.js";
 
 const MAGIC = [0x44, 0x42, 0x4d, 0x53] as const;

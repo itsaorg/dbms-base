@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { StoreType } from "../../src/enums/StoreType.js";
+import { StoreType } from "../../src/base/StoreType.js";
 import { DbmsStore } from "../../src/base/DbmsStore.js";
 
 class TestStore extends DbmsStore {

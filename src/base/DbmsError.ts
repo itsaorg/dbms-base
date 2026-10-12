@@ -1,4 +1,4 @@
-import { DbmsErrorCode } from "../enums/DbmsErrorCode.js";
+import { DbmsErrorCode } from "./DbmsErrorCode.js";
 
 /**
  * An error carrying a stable {@link DbmsErrorCode}.

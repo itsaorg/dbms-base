@@ -1,8 +1,10 @@
 /**
- * Classes that implement the DBMS contracts.
+ * Classes and enumerations that implement the DBMS contracts.
  *
  * @module
  */
+export { StoreType } from "./StoreType.js";
+export { DbmsErrorCode } from "./DbmsErrorCode.js";
 export { DbmsEventEmitter } from "./DbmsEventEmitter.js";
 export { DbmsStore } from "./DbmsStore.js";
 export { DbmsContainer } from "./DbmsContainer.js";
