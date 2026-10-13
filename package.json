@@ -1,6 +1,6 @@
 {
   "name": "@itsaorg/dbms-base",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Zero-dependency TypeScript contracts for Itsa DBMS stores, queries, transactions, and buffer boundaries.",
   "type": "module",
   "license": "Apache-2.0",
