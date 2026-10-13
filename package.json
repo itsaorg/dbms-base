@@ -31,6 +31,8 @@
     "build": "npm run clean:dist && npm run build:tsc",
     "build:tsc": "tsc --project tsconfig.json --pretty",
     "docs": "typedoc --options configs/typedoc.json",
+    "release:status": "changeset status --verbose",
+    "release:version": "changeset version",
     "release:npm": "npm run build && node .devenv/publish-if-missing.mjs"
   },
   "publishConfig": {
