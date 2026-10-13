@@ -16,7 +16,7 @@
 </div>
 <div class="tsd-comment tsd-typography">
 <div class="tsd-tag-example">
-<h4 class="tsd-anchor-link" id="example">Example<a href="#example" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><pre><code class="ts"><span class="hl-3">import</span><span class="hl-1"> </span><span class="hl-3">type</span><span class="hl-1"> { </span><span class="hl-4">DbmsTransactionInterface</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&quot;@itsaorg/dbms-base&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-5">function</span><span class="hl-1"> </span><span class="hl-0">finish</span><span class="hl-1">(</span><span class="hl-4">transaction</span><span class="hl-1">: </span><span class="hl-6">DbmsTransactionInterface</span><span class="hl-1">): </span><span class="hl-6">void</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-4">transaction</span><span class="hl-1">.</span><span class="hl-0">commit</span><span class="hl-1">();</span><br/><span class="hl-1">}</span>
+<h4 class="tsd-anchor-link" id="example">Example<a href="#example" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><pre><code class="ts"><span class="hl-3">import</span><span class="hl-1"> </span><span class="hl-3">type</span><span class="hl-1"> { </span><span class="hl-4">DbmsTransactionInterface</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&quot;@itsaorg/dbms-base&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-5">function</span><span class="hl-1"> </span><span class="hl-0">finish</span><span class="hl-1">(</span><span class="hl-4">transaction</span><span class="hl-1">: </span><span class="hl-7">DbmsTransactionInterface</span><span class="hl-1">): </span><span class="hl-7">void</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-4">transaction</span><span class="hl-1">.</span><span class="hl-0">commit</span><span class="hl-1">();</span><br/><span class="hl-1">}</span>
 </code><button type="button">Copy</button></pre>
 
 </div>
@@ -24,7 +24,7 @@
 <h4 class="tsd-anchor-link" id="see">See<a href="#see" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p><a href="../classes/DbmsTransaction.html" class="tsd-kind-class">DbmsTransaction</a></p>
 </div></div></section>
 <div class="tsd-signature"><span class="tsd-signature-keyword">interface</span> <span class="tsd-kind-interface">DbmsTransactionInterface</span> <span class="tsd-signature-symbol">{</span><br/>    <a class="tsd-kind-property" href="#id">id</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#commit-1">commit</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#emit-1">emit</a><span class="tsd-signature-symbol">&lt;</span><a class="tsd-signature-type tsd-kind-type-parameter" href="#emitk">K</a> <span class="tsd-signature-keyword">extends</span> <span class="tsd-signature-keyword">keyof</span> <a href="DbmsEventMap.html" class="tsd-signature-type tsd-kind-interface">DbmsEventMap</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><br/>        <span class="tsd-kind-parameter">event</span><span class="tsd-signature-symbol">:</span> <a class="tsd-signature-type tsd-kind-type-parameter" href="DbmsEventEmitterInterface.html#emitk">K</a><span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">payload</span><span class="tsd-signature-symbol">:</span> <a href="DbmsEventMap.html" class="tsd-signature-type tsd-kind-interface">DbmsEventMap</a><span class="tsd-signature-symbol">[</span><a class="tsd-signature-type tsd-kind-type-parameter" href="DbmsEventEmitterInterface.html#emitk">K</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#off-1">off</a><span class="tsd-signature-symbol">&lt;</span><a class="tsd-signature-type tsd-kind-type-parameter" href="#offk">K</a> <span class="tsd-signature-keyword">extends</span> <span class="tsd-signature-keyword">keyof</span> <a href="DbmsEventMap.html" class="tsd-signature-type tsd-kind-interface">DbmsEventMap</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><br/>        <span class="tsd-kind-parameter">event</span><span class="tsd-signature-symbol">:</span> <a class="tsd-signature-type tsd-kind-type-parameter" href="DbmsEventEmitterInterface.html#offk">K</a><span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">listener</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">payload</span><span class="tsd-signature-symbol">:</span> <a href="DbmsEventMap.html" class="tsd-signature-type tsd-kind-interface">DbmsEventMap</a><span class="tsd-signature-symbol">[</span><a class="tsd-signature-type tsd-kind-type-parameter" href="DbmsEventEmitterInterface.html#offk">K</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#on-1">on</a><span class="tsd-signature-symbol">&lt;</span><a class="tsd-signature-type tsd-kind-type-parameter" href="#onk">K</a> <span class="tsd-signature-keyword">extends</span> <span class="tsd-signature-keyword">keyof</span> <a href="DbmsEventMap.html" class="tsd-signature-type tsd-kind-interface">DbmsEventMap</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><br/>        <span class="tsd-kind-parameter">event</span><span class="tsd-signature-symbol">:</span> <a class="tsd-signature-type tsd-kind-type-parameter" href="DbmsEventEmitterInterface.html#onk">K</a><span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">listener</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">payload</span><span class="tsd-signature-symbol">:</span> <a href="DbmsEventMap.html" class="tsd-signature-type tsd-kind-interface">DbmsEventMap</a><span class="tsd-signature-symbol">[</span><a class="tsd-signature-type tsd-kind-type-parameter" href="DbmsEventEmitterInterface.html#onk">K</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#rollback-1">rollback</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/><span class="tsd-signature-symbol">}</span></div>
-<section class="tsd-panel tsd-hierarchy" data-refl="95">
+<section class="tsd-panel tsd-hierarchy" data-refl="110">
 <h4>Hierarchy (<a href="../hierarchy.html#DbmsTransactionInterface">View Summary</a>)</h4>
 <ul class="tsd-hierarchy">
 <li class="tsd-hierarchy-item"><a href="DbmsEventEmitterInterface.html" class="tsd-signature-type tsd-kind-interface">DbmsEventEmitterInterface</a>
@@ -35,7 +35,7 @@
 <ul class="tsd-hierarchy">
 <li><a href="../classes/DbmsTransaction.html" class="tsd-signature-type tsd-kind-class">DbmsTransaction</a></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/4ccc741b5896b2fcc8be610bbdfb62ecaa6748d5/src/types/DbmsTransactionInterface.ts#L19">src/types/DbmsTransactionInterface.ts:19</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/6ed22347cc5ad622a793d11ab9596f80bf968d39/src/types/DbmsTransactionInterface.ts#L19">src/types/DbmsTransactionInterface.ts:19</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -62,7 +62,7 @@
 <div class="tsd-comment tsd-typography"><p>The identifier sent with transaction events.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/4ccc741b5896b2fcc8be610bbdfb62ecaa6748d5/src/types/DbmsTransactionInterface.ts#L21">src/types/DbmsTransactionInterface.ts:21</a></li></ul></aside></section></section></details>
+<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/6ed22347cc5ad622a793d11ab9596f80bf968d39/src/types/DbmsTransactionInterface.ts#L21">src/types/DbmsTransactionInterface.ts:21</a></li></ul></aside></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -76,7 +76,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/4ccc741b5896b2fcc8be610bbdfb62ecaa6748d5/src/types/DbmsTransactionInterface.ts#L24">src/types/DbmsTransactionInterface.ts:24</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/6ed22347cc5ad622a793d11ab9596f80bf968d39/src/types/DbmsTransactionInterface.ts#L24">src/types/DbmsTransactionInterface.ts:24</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="emit"><span>emit</span><a href="#emit" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -101,7 +101,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DbmsEventEmitterInterface.html">DbmsEventEmitterInterface</a>.<a href="DbmsEventEmitterInterface.html#emit">emit</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/4ccc741b5896b2fcc8be610bbdfb62ecaa6748d5/src/types/DbmsEventEmitterInterface.ts#L42">src/types/DbmsEventEmitterInterface.ts:42</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/6ed22347cc5ad622a793d11ab9596f80bf968d39/src/types/DbmsEventEmitterInterface.ts#L42">src/types/DbmsEventEmitterInterface.ts:42</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="off"><span>off</span><a href="#off" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -126,7 +126,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DbmsEventEmitterInterface.html">DbmsEventEmitterInterface</a>.<a href="DbmsEventEmitterInterface.html#off">off</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/4ccc741b5896b2fcc8be610bbdfb62ecaa6748d5/src/types/DbmsEventEmitterInterface.ts#L34">src/types/DbmsEventEmitterInterface.ts:34</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/6ed22347cc5ad622a793d11ab9596f80bf968d39/src/types/DbmsEventEmitterInterface.ts#L34">src/types/DbmsEventEmitterInterface.ts:34</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="on"><span>on</span><a href="#on" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -151,7 +151,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Inherited from <a href="DbmsEventEmitterInterface.html">DbmsEventEmitterInterface</a>.<a href="DbmsEventEmitterInterface.html#on">on</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/4ccc741b5896b2fcc8be610bbdfb62ecaa6748d5/src/types/DbmsEventEmitterInterface.ts#L26">src/types/DbmsEventEmitterInterface.ts:26</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/6ed22347cc5ad622a793d11ab9596f80bf968d39/src/types/DbmsEventEmitterInterface.ts#L26">src/types/DbmsEventEmitterInterface.ts:26</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="rollback"><span>rollback</span><a href="#rollback" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -162,7 +162,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/4ccc741b5896b2fcc8be610bbdfb62ecaa6748d5/src/types/DbmsTransactionInterface.ts#L27">src/types/DbmsTransactionInterface.ts:27</a></li></ul></aside></div></li></ul></section></section></details></div>
+<li>Defined in <a href="https://github.com/itsaorg/dbms-base/blob/6ed22347cc5ad622a793d11ab9596f80bf968d39/src/types/DbmsTransactionInterface.ts#L27">src/types/DbmsTransactionInterface.ts:27</a></li></ul></aside></div></li></ul></section></section></details></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
