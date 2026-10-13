@@ -1,5 +1,7 @@
 # Changelog
 
-## 0.0.0
+## 0.1.0
 
-Unreleased. The first published release is 1.0.0.
+### Minor Changes
+
+- 0dbd4f0: Initial public release of the DBMS contracts.
